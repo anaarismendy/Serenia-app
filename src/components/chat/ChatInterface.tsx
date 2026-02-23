@@ -94,14 +94,14 @@ export function ChatInterface({ conversationId, initialContext }: ChatInterfaceP
   return (
     <Card className="h-[600px] flex flex-col">
       <CardHeader>
-        <CardTitle className="text-lg">Conversación de Bienestar</CardTitle>
+        <CardTitle className="text-lg">Conversación con Serenia AI</CardTitle>
       </CardHeader>
       <CardContent className="flex-1 flex flex-col p-0">
         <ScrollArea className="flex-1 p-4" ref={scrollAreaRef}>
           <div className="space-y-4">
             {messages.length === 0 ? (
               <div className="text-center text-gray-500 py-8">
-                <p>Comienza una conversación sobre tu bienestar emocional</p>
+                <p>Comienza una conversación con Serenia AI</p>
                 <p className="text-sm mt-2">Estoy aquí para escucharte y apoyarte</p>
               </div>
             ) : (

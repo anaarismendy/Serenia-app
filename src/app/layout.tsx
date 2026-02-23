@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bienestar Emocional",
-  description: "Tu espacio personal para el crecimiento emocional",
+  title: "Serenia",
+  description: "Tu espacio personal para el crecimiento emocional con Serenia",
 };
 
 export default function RootLayout({

@@ -1,22 +1,24 @@
-# Bienestar Emocional
+# Serenia
 
-Aplicación web personal para el registro y análisis de estados emocionales con conversaciones contextuales con IA.
+Aplicación web personal Serenia para el registro y análisis de estados emocionales con conversaciones contextuales con IA.
 
-## Características
+## Características Implementadas
 
-- Autenticación de usuarios con Supabase
-- Registro de estados emocionales con intensidad y notas
-- Conversaciones automáticas con IA post-registro
-- Historial emocional
-- Insights y patrones emocionales
-- Interfaz responsive y moderna
+- ✅ Autenticación de usuarios con Supabase
+- ✅ Registro de estados emocionales con intensidad y notas
+- ✅ Conversaciones automáticas con Serenia AI (Google Gemini)
+- ✅ Calendario emocional interactivo
+- ✅ Historial completo de emociones y conversaciones
+- ✅ Interfaz responsive y moderna con Tailwind CSS
+- ✅ CI/CD básico con GitHub Actions
+- ✅ Sistema de componentes reutilizables con ShadCN UI
 
 ## Stack Tecnológico
 
 - **Frontend**: Next.js 14+ con App Router
 - **UI/UX**: Tailwind CSS + ShadCN UI
 - **Backend**: Supabase (Auth + PostgreSQL)
-- **IA**: OpenAI API (GPT-3.5-turbo)
+- **IA**: Google Gemini API - Serenia AI
 - **Animaciones**: Framer Motion
 - **Lenguaje**: TypeScript estricto
 
@@ -32,8 +34,8 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key_here
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 
-# OpenAI Configuration
-OPENAI_API_KEY=sk-your-openai-key-here
+# Google Gemini Configuration
+GEMINI_API_KEY=your_gemini_api_key_here
 
 # Database URL
 DATABASE_URL=postgresql://postgres:[YOUR-PASSWORD]@db.your-project.supabase.co:5432/postgres
@@ -72,7 +74,7 @@ src/
 │   ├── auth/             # Autenticación
 │   ├── mood/             # Registro emocional
 │   └── chat/             # Conversación IA
-├── lib/                  # Configuración (Supabase, OpenAI)
+├── lib/                  # Configuración (Supabase, Gemini)
 ├── hooks/                # Lógica personalizada
 └── types/                # Tipos TypeScript
 ```
@@ -81,7 +83,7 @@ src/
 
 1. **Registro/Login**: Usuario se autentica con Supabase Auth
 2. **Registro Emocional**: Selecciona emoción, intensidad (1-10) y notas opcionales
-3. **Conversación Automática**: IA genera respuesta contextual basada en el estado emocional
+3. **Conversación Automática**: Serenia AI genera respuesta contextual basada en el estado emocional
 4. **Historial**: Acceso a registros y conversaciones anteriores
 
 ## Scripts SQL Importantes
@@ -94,11 +96,13 @@ El archivo `database/migrations/001_initial_schema.sql` contiene:
 
 ## Próximos Pasos
 
-- [ ] Componente de chat interactivo
-- [ ] Historial de emociones con filtros
-- [ ] Visualización de patrones emocionales
+- [x] Componente de chat interactivo
+- [x] Historial de emociones con filtros
+- [x] Visualización de patrones emocionales
 - [ ] Exportación de datos
 - [ ] Notificaciones y recordatorios
+- [ ] Integración con más modelos de IA
+- [ ] Dashboard analítico avanzado
 
 ## Contribución
 

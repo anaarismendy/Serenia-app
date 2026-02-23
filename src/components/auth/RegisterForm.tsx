@@ -37,7 +37,7 @@ export function RegisterForm() {
       <CardHeader>
         <CardTitle>Crear Cuenta</CardTitle>
         <CardDescription>
-          Regístrate para comenzar tu viaje de bienestar emocional
+          Regístrate para comenzar tu viaje con Serenia
         </CardDescription>
       </CardHeader>
       <CardContent>

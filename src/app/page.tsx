@@ -30,7 +30,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-6">
             <h1 className="text-2xl font-bold text-gray-900">
-              Bienestar Emocional
+              Serenia
             </h1>
             <div className="flex items-center space-x-4">
               <span className="text-sm text-gray-600">
@@ -55,7 +55,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Calendar className="h-5 w-5 mr-2" />
-                  Calendario Emocional
+                  Calendario de Serenia
                 </CardTitle>
                 <CardDescription>
                   Revisa tus emociones por día y accede a conversaciones
@@ -63,7 +63,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">
-                  Visualiza tu bienestar emocional a lo largo del tiempo
+                  Visualiza tu viaje emocional con Serenia
                 </p>
                 <Link href="/calendar">
                   <Button variant="outline" size="sm">
@@ -77,7 +77,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <MessageCircle className="h-5 w-5 mr-2" />
-                  Conversaciones con IA
+                  Conversaciones con Serenia AI
                 </CardTitle>
                 <CardDescription>
                   Chats sobre tus emociones
@@ -85,7 +85,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-4">
-                  Conversa con IA sobre tu bienestar emocional
+                  Conversa con Serenia AI sobre tus emociones
                 </p>
                 <Link href="/chat">
                   <Button variant="outline" size="sm">
