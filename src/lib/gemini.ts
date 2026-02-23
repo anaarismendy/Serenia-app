@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
-// API key configurada directamente
-const genAI = new GoogleGenerativeAI('AIzaSyCZfhYJplVMa5PFqvvfMz0w2f7J6IOGcE0')
+// API key desde variables de entorno
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!)
 
 export interface ChatContext {
   currentMood: {
@@ -20,8 +20,8 @@ export async function generateEmotionalResponse(
   context: ChatContext,
   userMessage?: string
 ): Promise<string> {
-  console.log('Usando API key directa de Gemini 2.5 Flash')
-  console.log('API Key (primeros 10 chars):', 'AIzaSyCZfh'.substring(0, 10))
+  console.log('Usando API key desde variables de entorno de Gemini 2.5 Flash')
+  console.log('API Key configurada:', process.env.GEMINI_API_KEY ? '✅ Configurada' : '❌ No encontrada')
 
   const systemPrompt = `Eres un amigo cercano y de confianza, empático y compasivo. Tu objetivo es ayudar a tu amigo a entender y procesar sus emociones de manera saludable, como lo haría un buen amigo.
 
